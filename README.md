@@ -22,6 +22,7 @@
 
 # Bundle 2 Exercise 1
 
+```
 Kait cham@DESKTOP-JBLRO4G MINGW64 /d/The Gym/the_gym_git (main)
 $ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
@@ -52,3 +53,4 @@ To https://github.com/kaitcham/the_gym_git.git
 
 - [new branch] ft/bundle-2 -> ft/bundle-2
   Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
+```

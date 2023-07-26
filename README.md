@@ -189,3 +189,82 @@ Revert "Add team.html"
  delete mode 100644 team.html
 
 ```
+
+# Bundle 3 Exercise 2
+
+```
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (main)
+$ git add home.html
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (main)
+$ git commit -m"Modified home.html"
+[main bfe48c8] Modified home.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/kaitcham/the_gym_git.git
+   f5e5bd5..bfe48c8  main -> main
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$ git add home.html
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$ git commit -m"Modified home.html"
+[ft/home-page-redesign 7476a0b] Modified home.html
+ 1 file changed, 1 insertion(+)
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$ git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+The Gym@DESKTOP-CD5BQ3O MINGW64 ~/Desktop/Projects/the_gym_git (ft/home-page-redesign)
+$  git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.00 KiB | 1.50 MiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting
+remote:      https://github.com/kaitcham/the_gym_git/pull/new/ft/home-page-redes
+ign
+remote:
+To https://github.com/kaitcham/the_gym_git.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+```
